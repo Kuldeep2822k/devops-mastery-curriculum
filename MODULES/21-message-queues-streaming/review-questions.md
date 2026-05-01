@@ -1,0 +1,17 @@
+---
+title: 'Review Questions'
+tags:
+  - review-questions
+  - messaging
+  - queues
+  - streaming
+module: "21"
+---
+
+# Review Questions — Module 21 Message Queues & Streaming
+
+- What is the primary failure mode you expect first in this domain, and why?
+- What would you measure to detect user impact early?
+- Which changes are reversible vs irreversible? What is your rollback trigger?
+- What is one common anti-pattern that creates long-term toil here?
+- What evidence would convince you you are wrong?

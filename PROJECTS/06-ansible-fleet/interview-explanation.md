@@ -1,0 +1,31 @@
+---
+title: '06-ansible-fleet: Interview Explanation'
+tags:
+  - project
+  - interview
+---
+
+# 06-ansible-fleet — Interview Explanation
+
+## Problem
+
+Demonstrate idempotent configuration management with canary rollouts and drift correction.
+
+## Approach
+
+- Local-first build so the work is reproducible
+- Evidence-driven verification and cleanup
+- Failure drills to force operational thinking
+
+## Tradeoffs
+
+- What was simplified for local-first constraints
+- What would change in production (scale, IAM, managed services)
+
+## Failures + Fixes
+
+- Describe the top 3 break/fix drills and what you learned
+
+## What I Would Do Next
+
+- Hardening, observability improvements, and guardrails

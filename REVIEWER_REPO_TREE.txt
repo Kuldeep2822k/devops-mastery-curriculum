@@ -1,0 +1,635 @@
+DEVOPS_STAFF_MASTER_GUIDE
+├── 00-HOW-TO-USE
+│   ├── 00-how-to-use.md
+│   ├── 01-learning-modes.md
+│   ├── 02-study-method.md
+│   ├── 03-lab-safety-cost-control.md
+│   ├── 04-evidence-rubrics.md
+│   ├── 05-troubleshooting-framework.md
+│   ├── 06-notes-template.md
+│   └── 07-home-lab-architecture.md
+├── ADVANCED
+│   ├── 00-overview.md
+│   ├── gameday-design.md
+│   ├── platform-tradeoffs.md
+│   └── resilience-testing.md
+├── APPENDICES
+│   ├── 00-index.md
+│   ├── cloud-provider-mappings.md
+│   ├── glossary.md
+│   └── references.md
+├── CAPSTONES
+│   ├── 00-overview.md
+│   ├── capstone-01-brownfield-rescue
+│   │   ├── 00-overview.md
+│   │   ├── checklist.md
+│   │   ├── rubric.md
+│   │   └── scenarios.md
+│   ├── capstone-02-platform-as-product
+│   │   ├── 00-overview.md
+│   │   ├── checklist.md
+│   │   ├── rubric.md
+│   │   └── scenarios.md
+│   └── capstone-03-multi-region-gameday
+│       ├── 00-overview.md
+│       ├── checklist.md
+│       ├── rubric.md
+│       └── scenarios.md
+├── CHEATSHEETS
+│   ├── ansible-workflow.md
+│   ├── cheatsheets-index.md
+│   ├── incident-log-template.md
+│   ├── kubectl-triage.md
+│   ├── linux-triage.md
+│   ├── networking-triage.md
+│   ├── oidc-oauth-quick-map.md
+│   └── terraform-workflow.md
+├── GENERATED_FILES_MANIFEST.md
+├── INTERVIEW_DRILLS
+│   ├── 00-overview.md
+│   ├── 01-systems-and-reliability.md
+│   ├── 02-kubernetes-and-delivery.md
+│   ├── 03-security-and-identity.md
+│   ├── 04-data-and-messaging.md
+│   └── 05-platform-and-finops.md
+├── MODULES
+│   ├── 01-foundations
+│   │   ├── 00-overview.md
+│   │   ├── 01-systems-thinking.md
+│   │   ├── 02-environments-and-change.md
+│   │   ├── 03-reliability-basics.md
+│   │   ├── 04-operational-writing.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-local-service-ops-baseline.md
+│   │   ├── lab-02-change-and-rollback-drill.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 02-linux
+│   │   ├── 00-overview.md
+│   │   ├── 01-processes-and-signals.md
+│   │   ├── 02-filesystems-and-permissions.md
+│   │   ├── 03-systemd-and-logging.md
+│   │   ├── 04-network-triage-linux.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-systemd-service-debug.md
+│   │   ├── lab-02-resource-pressure-drill.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 03-git
+│   │   ├── 00-overview.md
+│   │   ├── 01-git-mental-model.md
+│   │   ├── 02-branching-and-merge-strategies.md
+│   │   ├── 03-history-tools-for-operators.md
+│   │   ├── 04-collaboration-and-review.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-branching-conflicts-and-recovery.md
+│   │   ├── lab-02-regression-hunt-bisect-and-revert.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 04-ci
+│   │   ├── 00-overview.md
+│   │   ├── 01-ci-pipeline-architecture.md
+│   │   ├── 02-artifacts-caching-parallelism.md
+│   │   ├── 03-secrets-environments-approvals.md
+│   │   ├── 04-ci-reliability.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-portable-pipeline-local-runner.md
+│   │   ├── lab-02-github-actions-pipeline.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 05-containers
+│   │   ├── 00-overview.md
+│   │   ├── 01-container-mental-model.md
+│   │   ├── 02-images-layers-tags-digests.md
+│   │   ├── 03-runtime-ops-debugging.md
+│   │   ├── 04-secure-container-practices.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-build-run-debug-image.md
+│   │   ├── lab-02-break-fix-runtime-failures.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 06-kubernetes
+│   │   ├── 00-overview.md
+│   │   ├── 01-workloads-labels-and-rollouts.md
+│   │   ├── 02-probes-resources-and-scheduling.md
+│   │   ├── 03-services-ingress-and-networking.md
+│   │   ├── 04-storage-basics.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-deploy-break-fix.md
+│   │   ├── lab-02-network-dns-debug.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 07-delivery
+│   │   ├── 00-overview.md
+│   │   ├── 01-cd-and-promotion-model.md
+│   │   ├── 02-deployment-strategies.md
+│   │   ├── 03-rollback-and-migration-safety.md
+│   │   ├── 04-release-gates-and-progressive-delivery.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-rollout-and-rollback-kind.md
+│   │   ├── lab-02-canary-and-promotion.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 08-iac
+│   │   ├── 00-overview.md
+│   │   ├── 01-terraform-mental-model.md
+│   │   ├── 02-state-locking-and-drift.md
+│   │   ├── 03-modules-and-composition.md
+│   │   ├── 04-safe-changes-and-lifecycle.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-local-state-plan-apply-destroy.md
+│   │   ├── lab-02-drift-and-state-recovery.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 09-config-mgmt
+│   │   ├── 00-overview.md
+│   │   ├── 01-idempotency-and-modules.md
+│   │   ├── 02-inventory-and-variables.md
+│   │   ├── 03-handlers-templates-and-check-mode.md
+│   │   ├── 04-operational-safety.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-local-idempotent-playbook.md
+│   │   ├── lab-02-drift-and-safe-rollouts.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 10-security
+│   │   ├── 00-overview.md
+│   │   ├── 01-threat-modeling-for-operators.md
+│   │   ├── 02-secrets-hygiene.md
+│   │   ├── 03-policy-gates-and-least-privilege.md
+│   │   ├── 04-supply-chain-basics.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-secret-leak-prevention-git-hook.md
+│   │   ├── lab-02-ci-security-gates-manifest.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 11-observability
+│   │   ├── 00-overview.md
+│   │   ├── 01-logs-metrics-traces.md
+│   │   ├── 02-alerting-design.md
+│   │   ├── 03-slos-slIs-error-budgets.md
+│   │   ├── 04-dashboards-and-debugging.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-instrument-a-service-local.md
+│   │   ├── lab-02-alerts-and-runbooks-drill.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 12-sre
+│   │   ├── 00-overview.md
+│   │   ├── 01-incident-management.md
+│   │   ├── 02-error-budgets-and-risk.md
+│   │   ├── 03-toil-and-automation.md
+│   │   ├── 04-capacity-and-resilience.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-incident-drill-and-postmortem.md
+│   │   ├── lab-02-slo-error-budget-policy.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 13-programming-for-devops
+│   │   ├── 00-overview.md
+│   │   ├── 01-reliability-in-scripts.md
+│   │   ├── 02-http-apis-and-resilience.md
+│   │   ├── 03-data-parsing-and-formats.md
+│   │   ├── 04-testing-and-packaging.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-build-a-safe-cli-tool.md
+│   │   ├── lab-02-api-client-retries-and-pagination.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 14-web-proxy
+│   │   ├── 00-overview.md
+│   │   ├── 01-reverse-proxy-mental-model.md
+│   │   ├── 02-timeouts-buffering-and-retries.md
+│   │   ├── 03-headers-auth-and-client-ip.md
+│   │   ├── 04-troubleshooting-502-503-504.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-nginx-reverse-proxy-local.md
+│   │   ├── lab-02-break-fix-timeouts-and-headers.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 15-networking-protocols
+│   │   ├── 00-overview.md
+│   │   ├── 01-tcp-udp-basics-and-failure-patterns.md
+│   │   ├── 02-dns-basics-and-debugging.md
+│   │   ├── 03-http-behavior-and-debugging.md
+│   │   ├── 04-tls-basics-and-debugging.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-sockets-and-connectivity-drill.md
+│   │   ├── lab-02-dns-and-tls-debug-drill.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 16-serverless
+│   │   ├── 00-overview.md
+│   │   ├── 01-event-model-and-triggers.md
+│   │   ├── 02-cold-starts-and-performance.md
+│   │   ├── 03-concurrency-and-backpressure.md
+│   │   ├── 04-observability-and-debugging.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-local-event-processor.md
+│   │   ├── lab-02-retries-and-dead-letter.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 17-artifacts
+│   │   ├── 00-overview.md
+│   │   ├── 01-artifact-identity-and-digests.md
+│   │   ├── 02-sbom-basics.md
+│   │   ├── 03-signing-and-attestations.md
+│   │   ├── 04-promotion-and-retention.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-pin-and-promote-by-digest.md
+│   │   ├── lab-02-generate-and-verify-sbom.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 18-service-mesh
+│   │   ├── 00-overview.md
+│   │   ├── 01-when-to-use-a-mesh.md
+│   │   ├── 02-mtls-and-identity.md
+│   │   ├── 03-traffic-policy-and-resilience.md
+│   │   ├── 04-failure-domains-and-debugging.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-mtls-between-two-services.md
+│   │   ├── lab-02-timeouts-retries-and-outages.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 19-email
+│   │   ├── 00-overview.md
+│   │   ├── 01-smtp-mental-model.md
+│   │   ├── 02-deliverability-spf-dkim-dmarc.md
+│   │   ├── 03-bounces-retries-and-queues.md
+│   │   ├── 04-debugging-headers-and-traces.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-smtp-session-drill.md
+│   │   ├── lab-02-trace-a-delivery-failure.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 20-datastores-for-devops
+│   │   ├── 00-overview.md
+│   │   ├── 01-postgres-ops-baseline.md
+│   │   ├── 02-redis-ops-baseline.md
+│   │   ├── 03-backups-restore-and-dr.md
+│   │   ├── 04-performance-and-locks.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-local-postgres-backup-restore.md
+│   │   ├── lab-02-redis-failure-drill.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 21-message-queues-streaming
+│   │   ├── 00-overview.md
+│   │   ├── 01-delivery-semantics-and-idempotency.md
+│   │   ├── 02-retries-dlq-and-poison-messages.md
+│   │   ├── 03-ordering-partitions-and-throughput.md
+│   │   ├── 04-lag-backpressure-and-triage.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-build-a-local-queue.md
+│   │   ├── lab-02-duplicate-delivery-drill.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 22-identity-and-access
+│   │   ├── 00-overview.md
+│   │   ├── 01-oidc-oauth-mental-model.md
+│   │   ├── 02-tokens-claims-and-expiry.md
+│   │   ├── 03-rbac-and-policy-debugging.md
+│   │   ├── 04-workload-identity-patterns.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-jwt-signing-and-validation.md
+│   │   ├── lab-02-rbac-failure-drill.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 23-release-engineering
+│   │   ├── 00-overview.md
+│   │   ├── 01-versioning-and-changelogs.md
+│   │   ├── 02-build-once-promote-many.md
+│   │   ├── 03-release-gates-and-quality.md
+│   │   ├── 04-rollbacks-and-migrations.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-release-metadata-and-promotion.md
+│   │   ├── lab-02-rollback-drill.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   ├── 24-platform-engineering
+│   │   ├── 00-overview.md
+│   │   ├── 01-golden-paths-and-templates.md
+│   │   ├── 02-guardrails-and-policies.md
+│   │   ├── 03-multi-tenancy-and-rbac.md
+│   │   ├── 04-idp-concepts-and-adoption.md
+│   │   ├── checklist.md
+│   │   ├── cloud-extension-lab.md
+│   │   ├── common-mistakes.md
+│   │   ├── decision-record-template.md
+│   │   ├── deep-dive-01.md
+│   │   ├── deep-dive-02.md
+│   │   ├── exam.md
+│   │   ├── lab-01-build-a-template-repo.md
+│   │   ├── lab-02-add-policy-gates.md
+│   │   ├── review-questions.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   ├── troubleshooting-lab.md
+│   │   └── troubleshooting.md
+│   └── 25-cost-reliability-finops
+│       ├── 00-overview.md
+│       ├── 01-cost-drivers-and-tagging.md
+│       ├── 02-budgets-guardrails-and-alerts.md
+│       ├── 03-unit-economics-and-capacity.md
+│       ├── 04-tradeoffs-cost-vs-reliability.md
+│       ├── checklist.md
+│       ├── cloud-extension-lab.md
+│       ├── common-mistakes.md
+│       ├── decision-record-template.md
+│       ├── deep-dive-01.md
+│       ├── deep-dive-02.md
+│       ├── exam.md
+│       ├── lab-01-build-a-local-cost-model.md
+│       ├── lab-02-rightsize-and-rollback.md
+│       ├── review-questions.md
+│       ├── rubric.md
+│       ├── runbook-template.md
+│       ├── troubleshooting-lab.md
+│       └── troubleshooting.md
+├── PROGRESS
+│   ├── learning-checklist.md
+│   └── spaced-repetition.md
+├── PROJECTS
+│   ├── 00-overview.md
+│   ├── project-01-delivery-pipeline
+│   │   ├── 00-overview.md
+│   │   ├── checklist.md
+│   │   ├── decision-record-template.md
+│   │   ├── exam.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   └── troubleshooting.md
+│   ├── project-02-iac-environment
+│   │   ├── 00-overview.md
+│   │   ├── checklist.md
+│   │   ├── decision-record-template.md
+│   │   ├── exam.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   └── troubleshooting.md
+│   ├── project-03-observability-product
+│   │   ├── 00-overview.md
+│   │   ├── checklist.md
+│   │   ├── decision-record-template.md
+│   │   ├── exam.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   └── troubleshooting.md
+│   ├── project-04-security-supply-chain
+│   │   ├── 00-overview.md
+│   │   ├── checklist.md
+│   │   ├── decision-record-template.md
+│   │   ├── exam.md
+│   │   ├── rubric.md
+│   │   ├── runbook-template.md
+│   │   └── troubleshooting.md
+│   └── project-05-golden-path
+│       ├── 00-overview.md
+│       ├── checklist.md
+│       ├── decision-record-template.md
+│       ├── exam.md
+│       ├── rubric.md
+│       ├── runbook-template.md
+│       └── troubleshooting.md
+├── QA_AUDIT.md
+├── QA_SELF_AUDIT_REPORT.md
+├── README.md
+├── REVIEWER_GUIDE.md
+├── REVIEWER_MODULE_MAP.md
+├── REVIEWER_REPO_MANIFEST.md
+├── REVIEWER_REPO_TREE.txt
+├── ROADMAP.md
+├── SCHEDULES
+│   ├── 180-day-staff.md
+│   ├── 30-day-boot.md
+│   ├── 365-day-mastery.md
+│   └── 90-day-deep.md
+├── SETUP
+│   ├── 00-overview.md
+│   ├── 01-workstation-baseline.md
+│   ├── 02-git-and-github.md
+│   ├── 03-docker.md
+│   ├── 04-kubernetes-local.md
+│   ├── 05-cli-toolbelt.md
+│   ├── 06-iac-tooling.md
+│   ├── 07-config-mgmt-tooling.md
+│   ├── 08-security-tooling.md
+│   └── 09-observability-tooling.md
+├── TROUBLESHOOTING_CATALOG
+│   ├── 00-index.md
+│   ├── 01-ci-cd.md
+│   ├── 02-kubernetes.md
+│   ├── 03-networking.md
+│   ├── 04-datastores.md
+│   └── 05-identity.md
+├── WHY_PY_TOOLS.md
+└── tools
+    ├── generate_remaining.py
+    └── generate_reviewer_docs.py
