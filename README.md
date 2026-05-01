@@ -16,7 +16,7 @@ You finish each module with evidence:
 ## Getting Started
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Kuldeep2822k/devops-mastery-curriculum.git
 cd DEVOPS_STAFF_MASTER_GUIDE
 ```
 
