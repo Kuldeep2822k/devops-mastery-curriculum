@@ -10,7 +10,7 @@ tags:
 
 This is the **missing first step** for someone who has never used a command line or Git. The rest of the curriculum assumes you can do the things on this page. If you already can, skim it and move on. If not, spend an hour here — it will save you many hours later.
 
-> **You only need two tools for your first module:** `python3` and `curl`. You do **not** need Docker, Kubernetes, Terraform, or Ansible yet. Install those later, when a module asks for them. (See [00-overview.md](00-overview.md).)
+> **For the Module 01 lab you only need:** `python3` and `curl` (you’ll still want `git` to clone this repo and practice commits). You do **not** need Docker, Kubernetes, Terraform, or Ansible yet. Install those later, when a module asks for them. (See [00-overview.md](00-overview.md).)
 
 ## 1. The terminal (a.k.a. command line, shell)
 
