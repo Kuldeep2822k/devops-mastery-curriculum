@@ -19,7 +19,7 @@ Build a stable operator workstation baseline: consistent versions, safe shell de
 
 ## Windows Users: Use WSL2
 
-The labs in this curriculum use Linux/macOS commands (`bash`, `curl`, `ss`, `systemd`, etc.). Native Windows PowerShell/CMD will **not** match them. Instead of fighting that, run a real Linux environment on Windows using **WSL2** (Windows Subsystem for Linux). This is the standard, well-supported way to do DevOps work on a Windows machine.
+The labs in this curriculum use Linux commands (`bash`, `curl`, `ss`, `systemd`, etc.). Native Windows PowerShell/CMD will **not** match them. Instead of fighting that, run a real Linux environment on Windows using **WSL2** (Windows Subsystem for Linux). This is the standard, well-supported way to do DevOps work on a Windows machine.
 
 ### Install WSL2 (one time)
 

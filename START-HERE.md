@@ -77,7 +77,7 @@ Everything after Module 12, plus the **deep-dive** pages inside each module, is 
 ## If you get stuck
 
 - **A term makes no sense** → [Glossary](APPENDICES/glossary.md).
-- **A command isn't found / setup broke** → each setup doc has a Troubleshooting section; also see [SETUP/01-workstation-baseline.md](SETUP/01-workstation-baseline.md).
+- **A command isn't found / setup broke** → see the Troubleshooting section in [SETUP/01-workstation-baseline.md](SETUP/01-workstation-baseline.md), or check the readiness checklist in the [prerequisites primer](SETUP/00-prerequisites-primer.md).
 - **You're on Windows** → follow the **WSL2** path in [SETUP/01-workstation-baseline.md](SETUP/01-workstation-baseline.md#windows-users-use-wsl2).
 - **You feel overwhelmed by the size** → that's normal. Do only steps 1–6 above. Ignore the rest until you finish the Core.
 

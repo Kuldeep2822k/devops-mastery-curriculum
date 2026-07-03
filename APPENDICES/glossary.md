@@ -41,7 +41,7 @@ Plain-English definitions of the terms used throughout this curriculum. **Keep t
 - **Blast radius** — how much is affected if a change or failure goes wrong. You try to keep it small.
 - **Rollback** — safely returning a system to a previous known-good state after a bad change.
 - **Change control** — the discipline of making changes deliberately (small, reversible, observable) rather than ad hoc.
-- **ADR (Architecture / Any Decision Record)** — a short document capturing a decision: the context, the options considered, and why one was chosen.
+- **ADR (Architecture Decision Record)** — a short document capturing a decision: the context, the options considered, and why one was chosen.
 - **Toil** — repetitive manual operational work that could be automated; SRE aims to reduce it.
 - **Invariant** — something that must always be true about a system (e.g. "every request carries a trace ID").
 - **Failure domain** — a boundary within which things can fail together (a node, a data center, a region).
