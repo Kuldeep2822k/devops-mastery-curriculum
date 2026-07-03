@@ -14,8 +14,41 @@ Build a stable operator workstation baseline: consistent versions, safe shell de
 
 ## Prereqs
 
-- A Linux/macOS workstation or a Linux VM.
+- A Linux/macOS workstation, a Linux VM, **or Windows 10/11 with WSL2** (see below).
 - Admin rights to install packages.
+
+## Windows Users: Use WSL2
+
+The labs in this curriculum use Linux commands (`bash`, `curl`, `ss`, `systemd`, etc.). Native Windows PowerShell/CMD will **not** match them. Instead of fighting that, run a real Linux environment on Windows using **WSL2** (Windows Subsystem for Linux). This is the standard, well-supported way to do DevOps work on a Windows machine.
+
+### Install WSL2 (one time)
+
+Open **PowerShell as Administrator** and run:
+
+```powershell
+wsl --install
+```
+
+This installs WSL2 and Ubuntu by default. Reboot when prompted, then launch **Ubuntu** from the Start menu and create your Linux username/password.
+
+Verify you're on version 2:
+
+```powershell
+wsl --list --verbose
+```
+
+**Expected signal:** your distro shows `VERSION` `2`.
+
+### After that, live inside Ubuntu
+
+- Open the **Ubuntu** terminal for everything in this guide — run all commands there, not in PowerShell.
+- Keep your project files **inside the Linux filesystem** (e.g. `~/work/devops-labs`), not under `/mnt/c/...`. Working under `/mnt/c` is much slower and causes file-permission surprises.
+- **VS Code** users: install the "WSL" extension and open your project with `code .` from the Ubuntu terminal to edit Windows-side while running Linux-side.
+- **Docker Desktop** (used in later modules) has a "WSL2 backend" — enable it so `docker` works inside Ubuntu.
+
+From here on, every instruction that says "Linux" applies to you inside your Ubuntu (WSL2) shell.
+
+> **Callout — why not just use PowerShell?** Almost all production servers are Linux, and the operational tools you're learning (systemd, `ss`, package managers, Ansible) are Linux-native. Learning on WSL2 means the skills transfer directly to real jobs.
 
 ## Baseline Checklist (What “Good” Looks Like)
 

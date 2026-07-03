@@ -9,6 +9,8 @@ tags:
 
 This vault is designed to produce operational capability through repeatable labs, failure injection, evidence artifacts, and assessment. It is written to be used like an internal engineering enablement program: you can onboard a team with it.
 
+> **Brand new?** Read [START-HERE.md](../START-HERE.md) first, and keep the [Glossary](../APPENDICES/glossary.md) open in another tab — the concept lessons introduce a lot of vocabulary quickly, and looking terms up as you go is expected, not cheating.
+
 ## The Core Loop (Per Module)
 
 1. Read concept lessons (01–04) fast to build a mental model.
