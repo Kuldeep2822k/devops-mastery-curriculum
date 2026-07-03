@@ -21,8 +21,10 @@ You can:
 
 ## Prereqs
 
-- Setup section completed: [SETUP](../../SETUP/00-overview.md)
-- Comfortable running CLI commands and editing files.
+- Setup section completed: [SETUP](../../SETUP/00-overview.md) — for this module you only need `python3` and `curl`.
+- Comfortable running CLI commands and editing files. New to that? Do the [prerequisites primer](../../SETUP/00-prerequisites-primer.md) first.
+
+> **Beginner note:** This module is called "Foundations," but it introduces operator vocabulary quickly (SLO, RED, blast radius, ADR…). That's expected — read the concept pages (01–04) for the *shape* of the ideas, keep the [Glossary](../../APPENDICES/glossary.md) open, and get to **lab-01** for your first hands-on win. The two `deep-dive` pages are **advanced**; skip them on your first pass and return once the basics feel comfortable.
 
 ## Module Map
 

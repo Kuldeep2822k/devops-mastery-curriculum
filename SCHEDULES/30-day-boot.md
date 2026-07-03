@@ -15,13 +15,23 @@ tags:
 
 ## Cadence
 
-- Horizon: 30 days
+- Horizon: 30 days (about 4 weeks)
 - Daily: 60–120 minutes focused practice
 - Weekly: 1 longer integration session + one incident drill
 
-## Plan
+## Scope (Read This First)
 
-- Weeks 1–2: Modules 01–05 foundations and core tooling
-- Weeks 3–4: Modules 06–10 delivery + infrastructure safety
-- Weeks 5–6: Modules 11–15 observability/SRE + networking depth
-- Weeks 7+: Modules 16–25 staff breadth and staff depth
+You **cannot** master all 25 modules in 30 days, and trying to will just burn you out — that directly contradicts the "slow and complete" [study method](../00-HOW-TO-USE/02-study-method.md). This is a **survival scan of the Core (Modules 01–12)**: one pass, at least one lab per module, enough to be a functioning junior operator. Depth, staff breadth (13–25), projects, and capstones belong to the longer tracks:
+
+- Go deeper across the Core: [90-day-deep.md](90-day-deep.md)
+- Full staff breadth + integration: [180-day-staff.md](180-day-staff.md)
+- Repetition cycles + capstones: [365-day-mastery.md](365-day-mastery.md)
+
+## Plan (4 Weeks)
+
+- **Week 1:** Setup (primer + only the tools you need) and Modules 01–03 (Foundations, Linux, Git). Get lab-01 of Module 01 running early — that's your first win.
+- **Week 2:** Modules 04–06 (CI, Containers, Kubernetes). Install Docker and kind/minikube here, not before.
+- **Week 3:** Modules 07–09 (Delivery, IaC, Config Mgmt).
+- **Week 4:** Modules 10–12 (Security, Observability, SRE) + one integration session and an incident drill.
+
+> After Week 4 you'll have a real Core foundation. Continue into Modules 13–25 on the [90-day](90-day-deep.md) or [180-day](180-day-staff.md) track rather than cramming them here.

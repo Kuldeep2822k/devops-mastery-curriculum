@@ -9,6 +9,8 @@ tags:
 
 This roadmap explains the curriculum flow and how to turn modules into staff-level capability (not “tool familiarity”).
 
+> 🚦 **First time here?** Read [START-HERE.md](START-HERE.md) before this map. The list below is the *whole mountain* — beginners should walk the **Core (Modules 01–12)** first and treat Modules 13–25 and the `deep-dive` pages as advanced.
+
 ## Learning Contract
 
 - You do labs with verification signals, not just “it worked once”.
@@ -85,6 +87,9 @@ Modules build skills; projects test integration; capstones force staff-level des
 
 ## Cross-Links Index
 
+- Absolute beginners: [START-HERE.md](START-HERE.md)
+- Prerequisites primer (terminal + Git): [SETUP/00-prerequisites-primer.md](SETUP/00-prerequisites-primer.md)
+- Glossary (keep it open): [APPENDICES/glossary.md](APPENDICES/glossary.md)
 - How to use: [00-HOW-TO-USE](00-HOW-TO-USE/00-how-to-use.md)
 - Setup: SETUP/00-overview.md
 - Troubleshooting catalog: TROUBLESHOOTING_CATALOG/00-index.md

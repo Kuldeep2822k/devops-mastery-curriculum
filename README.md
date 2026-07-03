@@ -4,6 +4,12 @@ A production-grade, local-first learning system to build real operational compet
 
 This repo is designed to be used like an engineering program: you produce evidence, run drills, write runbooks, and practice safe rollback and verification.
 
+> 🚦 **New to DevOps or brand new to the terminal/Git? Read [START-HERE.md](START-HERE.md) first.** It explains what DevOps is in plain English, states honest prerequisites, and gives you a gentle first path so this guide doesn't feel like drinking from a firehose.
+
+## Who This Guide Is For
+
+The title says "Zero to Staff." The **"zero"** means *zero staff-level operations experience* — not zero computer skills. To have a good time here you should be comfortable using a terminal, editing files, and cloning a repo. If that's not you yet, the [prerequisites primer](SETUP/00-prerequisites-primer.md) gets you there. The **Core (Modules 01–12)** is your beginner-to-intermediate path; Modules 13–25 and the per-module `deep-dive` pages are advanced — come back to them later.
+
 ## What “Competence” Means Here
 
 You finish each module with evidence:
@@ -20,9 +26,12 @@ git clone https://github.com/Kuldeep2822k/devops-mastery-curriculum.git devops-s
 cd devops-staff-guide
 ```
 
-- Start here: [ROADMAP.md](ROADMAP.md)
+- Absolute beginners start here: [START-HERE.md](START-HERE.md)
+- New to the terminal/Git? Do the primer: [SETUP/00-prerequisites-primer.md](SETUP/00-prerequisites-primer.md)
+- See the module map: [ROADMAP.md](ROADMAP.md)
 - Read the operating model: [00-how-to-use.md](00-HOW-TO-USE/00-how-to-use.md)
-- Bootstrap tooling: [SETUP/00-overview.md](SETUP/00-overview.md)
+- Bootstrap tooling (install per module, not all at once): [SETUP/00-overview.md](SETUP/00-overview.md)
+- Keep the [Glossary](APPENDICES/glossary.md) open while you read
 - Pick a schedule: [SCHEDULES/](SCHEDULES/)
 
 ## Local-First, Cloud-Ready
