@@ -55,8 +55,8 @@ Ignore the "365-day mastery" and the 25-module map for now — that's the *whole
 
 1. **Read this page** (you're doing it). ✅
 2. **Do the primer** if you're new to the terminal/Git: [SETUP/00-prerequisites-primer.md](SETUP/00-prerequisites-primer.md).
-3. **Install just enough tooling.** For your very first module you only need **Python 3** and **curl** — not the whole toolbox. See [SETUP/00-overview.md](SETUP/00-overview.md), which now tells you what each module actually requires.
-4. **Do Module 01 — Foundations**, but treat the *concept* pages as a first read, not a test. Then do **lab-01**, where you'll run a real service and watch it respond. That first working lab is your first win — get to it early. [MODULES/01-foundations/00-overview.md](MODULES/01-foundations/00-overview.md)
+3. **Install just enough tooling.** For your very first lab you only need **Python 3** and **curl** (and **Git** to clone this repo) — not the whole toolbox. See [SETUP/00-overview.md](SETUP/00-overview.md), which now tells you what each module actually requires.
+4. **Do [Module 01 — Foundations](MODULES/01-foundations/00-overview.md)**, but treat the *concept* pages as a first read, not a test. Then do **lab-01**, where you'll run a real service and watch it respond. That first working lab is your first win — get to it early.
 5. **Keep the glossary open in another tab.** Whenever you hit a term you don't know (SLO, idempotent, canary…), look it up: [APPENDICES/glossary.md](APPENDICES/glossary.md).
 6. **Work through Modules 01–12** (the "Core") at a calm pace. That alone makes you a capable junior operator.
 

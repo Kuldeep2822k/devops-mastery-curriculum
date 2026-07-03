@@ -26,7 +26,7 @@ The terminal is a text window where you type commands instead of clicking button
 pwd                 # print working directory: "where am I?"
 ls                  # list the files/folders here
 ls -la              # list everything, including hidden files, with details
-cd ~/work           # change directory into ~/work  ( ~ means your home folder )
+cd ~                # change directory to your home folder ( ~ means home )
 cd ..               # go up one folder
 mkdir -p ~/work/devops-labs   # make a folder (and parents) if it doesn't exist
 cat file.txt        # print a file's contents
@@ -107,6 +107,7 @@ git log --oneline            # see your commit in the history
 ### Cloning this curriculum
 
 ```bash
+cd ~/work
 git clone https://github.com/Kuldeep2822k/devops-mastery-curriculum.git devops-staff-guide
 cd devops-staff-guide
 ```
