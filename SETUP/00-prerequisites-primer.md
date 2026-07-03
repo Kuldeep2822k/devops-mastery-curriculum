@@ -74,7 +74,7 @@ curl --version
 
 **Expected signal:** each prints a version number. If you get `command not found`, install them:
 
-- **macOS:** `brew install python3` (curl is preinstalled).
+- **macOS:** `brew install python` (this installs `python3`; curl is preinstalled).
 - **Ubuntu/WSL2:** `sudo apt update && sudo apt install -y python3 curl`.
 
 ## 4. What is Git (and GitHub)?
